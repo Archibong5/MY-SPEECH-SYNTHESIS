@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MY SPEECH SYNTHESIS</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="voiceinator">
+      <h1>The Voiceinator 10,000</h1>
+
+      <select id="voices" name="voice">
+        <option value="voice">Select Your Voice</option>
+      </select>
+
+      <label for="rate">Rate:</label>
+      <input id="rate" type="range" name="rate" min="0" max="3" value="1" step="0.1">
+
+      <label for="pitch">Pitch:</label>
+      <input id="pitch" type="range" name="pitch" min="0" max="3" value="1" step="0.1">
+
+      <textarea name="text">Welcome</textarea>
+      <button id="stop">Stop</button>
+      <button id="speak">Speak</button>
+
+    </div>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>

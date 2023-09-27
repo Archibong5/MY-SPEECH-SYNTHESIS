@@ -1,0 +1,112 @@
+html{
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding: 10rem 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+   repeating-conic-gradient(red 0 10deg, yellow 10deg 20deg, royalblue 20deg 30deg),
+   repeating-conic-gradient(yellow 0 10deg, royalblue 10deg 20deg, red 20deg 30deg),
+   repeating-conic-gradient(royalblue 0 10deg, red 10deg 20deg, yellow 20deg 30deg);
+  background-size: contain;
+}
+
+.voiceinator{
+  border: 2px solid black;
+  background: white;
+  position: relative;
+  padding: 3rem;
+  width: 50rem;
+  border-radius: 75px;
+  box-shadow: 3px 3px 5px black;
+  overflow: hidden;
+  z-index: 1;
+}
+
+h1{
+  border: 2px solid black;
+  text-align: center;
+  font-size: 4rem;
+  margin: -3rem 0 2rem -2rem;
+  width: calc(100% + 6.5rem);
+  background: royalblue;
+  color: white;
+  text-shadow: 3px 3px 5px black;
+  border-top-right-radius: 80px;
+  border-top-left-radius: 80px;
+  padding: 2rem;
+  transform: translateX(-12px);
+
+
+}
+
+.voiceinator label{
+  font-size: 3rem;
+}
+
+.voiceinator button,
+.voiceinator textarea,
+.voiceinator input,
+.voiceinator select{
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  background: rgba(0,0,0,0.1);
+  font-size: 2.5rem;
+  border: 0;
+  border-radius: 20px;
+  outline-color: royalblue;
+  display: block;
+}
+
+
+.voiceinator button{
+  background: royalblue;
+  color: white;
+  text-shadow: 3px 3px 5px black;
+  width: 48%;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 0;
+ /* font-size: 4rem; */
+ float: left;
+}
+
+.voiceinator button:nth-of-type(1){
+  margin-right: 10px;
+}
+
+
+.voiceinator textarea{
+  height: 20rem;
+  cursor: text;
+  resize: none;
+}
+
+.voiceinator input{
+  cursor: pointer;
+}
+
+
+
+.voiceinator select{
+  cursor: pointer;
+}
+
+.voiceinator button:active{
+  top: 3px;
+}
+
+.voiceinator button:hover{
+  border: 2px solid black;
+}
